@@ -27,7 +27,7 @@ public class User {
 	// properties
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "user_id", nullable = false, columnDefinition="INT AUTO_INCREMENT")
+	@Column(name = "user_id", nullable = false, columnDefinition = "INT AUTO_INCREMENT")
 	private Long userId;
 	
 	@Column(name = "user_name", nullable = false)
@@ -39,7 +39,7 @@ public class User {
 	@Column(name = "user_password", nullable = false)
 	private String userPassword;
 	
-	@Column(name = "created_on", nullable = false, columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
+	@Column(name = "created_on", nullable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
 	private String createdOn;
 	
 	// method to convert time into readable format

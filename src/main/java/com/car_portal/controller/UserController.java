@@ -79,6 +79,7 @@ public class UserController {
 			// send response entity
 			return ResponseEntity.ok(updatedUser);
 		} else {
+			// error handling
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
 		}
 	}
